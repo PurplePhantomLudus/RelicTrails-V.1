@@ -138,7 +138,7 @@ function jugarCarta(exp, valor) {
         let ult = numCards.length > 0 ? numCards[numCards.length - 1] : null;
         
         if (ult && Number(valor) <= Number(ult)) {
-            alert("Las cartas deben ir en orden creciente.");
+            mostrarAlerta("Las cartas deben ir en orden creciente.");
             return;
         }
     } else {
@@ -240,4 +240,14 @@ function mostrarFinal() {
 
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js");
+}
+function mostrarAlerta(mensaje) {
+    const alerta = document.getElementById("customAlert");
+    alerta.innerText = mensaje;
+    alerta.classList.add("show");
+    
+    // Ocultar automáticamente después de 3 segundos
+    setTimeout(() => {
+        alerta.classList.remove("show");
+    }, 3000);
 }

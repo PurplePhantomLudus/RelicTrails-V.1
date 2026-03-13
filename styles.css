@@ -126,3 +126,25 @@ input, select {
         height: 85px;
     }
 }
+/* --- NOTIFICACIÓN FLOTANTE (TOAST) --- */
+#customAlert {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ef4444; /* Rojo para alertas */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none; /* Para que no bloquee los clicks por debajo */
+    transition: opacity 0.3s ease;
+}
+
+#customAlert.show {
+    opacity: 1;
+}
