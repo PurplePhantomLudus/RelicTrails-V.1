@@ -23,5 +23,13 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshot.png",
+      "sizes": "300x667",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
   ]
 }
