@@ -11,7 +11,7 @@
   "screenshots": [
     {
       "src": "assets/screenshot.png",
-      "sizes": "1080x1920",
+      "sizes": "300x667",
       "type": "image/png",
       "form_factor": "narrow"
     }
