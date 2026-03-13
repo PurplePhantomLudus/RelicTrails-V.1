@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Relic Trails</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div id="welcome" class="screen">
+
+<img src="assets/welcome/portada.png" class="welcome">
+
+<h1>Relic Trails</h1>
+
+<p>Calculadora de expediciones</p>
+
+<button id="btnContinue">Nueva Expedición</button>
+
+</div>
+
+
+<div id="setup" class="screen hidden">
+
+<h2>Preparar partida</h2>
+
+<input id="player1" placeholder="Jugador 1">
+
+<input id="player2" placeholder="Jugador 2 (opcional)">
+
+<h3>Expediciones</h3>
+
+<select id="expeditions">
+<option value="5">5 expediciones</option>
+<option value="6">6 expediciones</option>
+</select>
+
+<button id="btnStart">Comenzar partida</button>
+
+</div>
+
+
+<div id="game" class="screen hidden">
+
+<h2 id="roundTitle"></h2>
+
+<h3 id="playerTurn"></h3>
+
+<div id="totalLive"></div>
+
+<div id="board"></div>
+
+<button id="btnFinishTurn">Finalizar turno</button>
+
+</div>
+
+
+<div id="roundResult" class="screen hidden">
+
+<h2>Resultado de ronda</h2>
+
+<div id="roundScores"></div>
+
+<button id="btnNextRound">Siguiente ronda</button>
+
+</div>
+
+
+<div id="finalResult" class="screen hidden">
+
+<h2>Resultado final</h2>
+
+<div id="finalScores"></div>
+
+<button id="btnRestart">Nueva partida</button>
+
+</div>
+
+</body>
+</html>
