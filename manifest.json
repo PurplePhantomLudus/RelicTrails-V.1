@@ -1,20 +1,31 @@
 {
-"name":"Relic Trails",
-"short_name":"RelicTrails",
-"start_url":"index.html",
-"display":"standalone",
-"background_color":"#0f172a",
-"theme_color":"#f59e0b",
-"icons":[
-{
-"src":"assets/icons/icon192.png",
-"sizes":"192x192",
-"type":"image/png"
-},
-{
-"src":"assets/icons/icon512.png",
-"sizes":"512x512",
-"type":"image/png"
-}
-]
+  "name": "Relic Trails",
+  "short_name": "RelicTrails",
+  "description": "Calculadora de puntuación y registro de expediciones para el juego Relic Trails.",
+  "id": "/relic-trails/",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait",
+  "screenshots": [
+    {
+      "src": "assets/screenshot.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "icons": [
+    {
+      "src": "assets/icons/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
